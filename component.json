@@ -1,0 +1,33 @@
+{
+    "title": "Common Referenced Parameters File",
+    "description": "File containing commonly referenced parameters.",
+    "docsUrl": "",
+    "url": "https://api.apis.guru/v2/specs/azure.com/cognitiveservices-Parameters/2017-08-30/swagger.json",
+    "envVars": {},
+    "credentials": {
+        "fields": {
+            "server": {
+                "label": "Server",
+                "viewClass": "SelectView",
+                "model": [
+                    "https://azure.local/",
+                    "--- Custom URL"
+                ],
+                "required": true
+            },
+            "otherServer": {
+                "label": "Custom Server URL",
+                "viewClass": "TextFieldView"
+            }
+        }
+    },
+    "triggers": {
+        "startFlow": {
+            "main": "./lib/triggers/startFlow.js",
+            "type": "polling",
+            "title": "Start Flow",
+            "fields": {}
+        }
+    },
+    "actions": {}
+}
